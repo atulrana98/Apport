@@ -1,0 +1,205 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .app {
+  font-family: Arial, sans-serif;
+}
+
+.kanban {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+select {
+  margin-right: 10px;
+} */
+
+/* General app styling */
+/* General app styling */
+/* General app styling */
+.app {
+  font-family: Arial, sans-serif;
+  background-color: #e8f4fd; /* Light blue background for the whole app */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the app takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Kanban board layout */
+.kanban {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%; /* Ensure it stretches to full width of the container */
+  max-width: 1200px; /* Optional: Limit the max width */
+}
+
+/* Column styles */
+.column {
+  width: 30%;
+  background-color: #fff; /* White background for columns */
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #d1d1d1; /* Subtle grey border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin: 10px; /* Space between columns */
+}
+
+/* Column header styling */
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark grey for header text */
+  margin-bottom: 10px;
+}
+
+.add-button {
+  background-color: #ff6f61; /* Coral red for the add button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #ff4c37; /* Darker coral on hover */
+}
+
+/* Card styles */
+.card {
+  background-color: #fff; /* White background for cards */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+  border-left: 5px solid #36a2eb; /* Blue border on the left */
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #36a2eb; /* Light blue text for card titles */
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #777; /* Light grey for tags */
+}
+
+/* Checkbox */
+.custom-checkbox {
+  margin-right: 100px;
+}
+
+/* Control styling */
+select {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  color: #333;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #36a2eb; /* Light blue button */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2587d6; /* Darker blue on hover */
+  color: white;
+}
+
+/* Priority colors */
+.column[data-priority="4"] {
+  border-left-color: #e83e8c; /* Urgent - Pinkish Red */
+}
+
+.column[data-priority="3"] {
+  border-left-color: #f9b115; /* High - Yellow Orange */
+}
+
+.column[data-priority="2"] {
+  border-left-color: #ffc107; /* Medium - Yellow */
+}
+
+.column[data-priority="1"] {
+  border-left-color: #28a745; /* Low - Green */
+}
+
+.column[data-priority="0"] {
+  border-left-color: #6c757d; /* No priority - Grey */
+}
+
+
